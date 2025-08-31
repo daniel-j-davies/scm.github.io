@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space City Medievalism - Participants</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <style>
+        @font-face {
+            font-family: 'Archive Mono';
+            src: url('/fonts/archive-mono/ArchiveMono-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        body {
+            font-family: 'Archive Mono', monospace;
+            background-color: #FFF8DB;
+            color: #006354;
+            background-image: 
+                linear-gradient(rgba(255, 248, 219, 0.95), rgba(255, 248, 219, 0.95)),
+                url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23006354' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(215, 129, 39, 0.95), rgba(215, 129, 39, 0.85)),
+                        url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M0 0h20v20H0V0zm10 17l-7-7 7-7 7 7-7 7z'/%3E%3C/g%3E%3C/svg%3E");
+            color: white;
+            padding: 4rem 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: #D78127;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #D78127;
+        }
+
+        .participant-card {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #F6A21C;
+            transition: transform 0.2s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .participant-card::before {
+            content: '✧';
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            color: #D78127;
+            opacity: 0.1;
+            font-size: 1.5rem;
+        }
+
+        .participant-card:hover {
+            transform: translateX(10px);
+        }
+
+        .organizer-card {
+            background: linear-gradient(to right, rgba(215, 129, 39, 0.1), transparent);
+        }
+        
+        .keynote-card {
+            background: linear-gradient(to right, rgba(246, 162, 28, 0.15), transparent);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-gray-800">✧ Space City Medievalism ✧</div>
+                <div>
+                    <a href="index.html" class="mr-6 hover:text-orange-800 transition-colors">Home</a>
+                    <a href="#" class="hover:text-orange-800 transition-colors">Meet the Participants</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="text-4xl mb-6">Project Participants</h1>
+            <p class="text-xl">Meet the scholars and creative writers exploring the intersection of medieval literature and contemporary poetics in Houston.</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-8 max-w-4xl">
+        <section class="mb-12">
+            <h2 class="section-title">Project Organizers</h2>
+            <div class="participant-card organizer-card">
+                <h3 class="font-bold text-xl mb-2">Daniel Davies</h3>
+                <p>Daniel Davies is an Assistant Professor of English at the University of Houston and 2024-25 Solmsen Fellow at the Institute for Research in the Humanities at the University of Wisconsin-Madison. His research centers on late-medieval literary and historical writing, with a particular focus on the history of poetry and poetics and the representation of war. With R.D. Perry he is co-editor of Literatures of the Hundred Years (Manchester University Press, 2024).</p>
+            </div>
+
+            <div class="participant-card organizer-card">
+                <h3 class="font-bold text-xl mb-2">Marshall Woodward</h3>
+                <p>Marshall Woodward is pursuing his MFA at the University of Houston. He works as a poetry editor for the journal Gulf Coast and is supported as a Mitchell Scholar for interdisciplinary art. He is currently working on a manuscript about empire and the myth-making of medieval America. Recent writing appears in or is forthcoming from Annulet, Fence, Hot Pink and The Indiana Review.</p>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="section-title">Keynote Speaker</h2>
+            <div class="participant-card keynote-card">
+                <h3 class="font-bold text-xl mb-2">Carl Phillips</h3>
+                <p>Carl Phillips is the author of 17 books of poetry, most recently <em>Scattered Snows, to the North</em> (2024) and <em>Then the War: And Selected Poems 2007-2020</em>, which won the 2023 Pulitzer Prize. His other honors include the 2021 Jackson Prize, the Aiken Taylor Award for Modern American Poetry, the Kingsley Tufts Award, a Lambda Literary Award, the PEN/USA Award for Poetry, and fellowships from the Guggenheim Foundation, the Library of Congress, the American Academy of Arts and Letters, and the Academy of American Poets.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Workshop Participants</h2>
+            
+            <div class="participant-card">
+                <h3 class="font-bold text-xl mb-2">Maha Abdelwahab</h3>
+                <p>Maha Abdelwahab is an Egyptian poet and aspiring translator. She received her MFA in Poetry from the University of Oregon and is pursuing her PhD at the University of Houston Creative Writing Program.</p>
+            </div>
+
+            <div class="participant-card">
+                <h3 class="font-bold text-xl mb-2">Audrey Dial</h3>
+                <p>Audrey Dial is a graduate student at the University of Houston, pursuing an M.A. in English with research interests in literature, medieval studies, linguistics, and theology. Outside her studies she works as an editor in publishing and, in her spare time, can be found reading, writing, and/or enjoying a cup of tea.</p>
+            </div>
+
+            <div class="participant-card">
+                <h3 class="font-bold text-xl mb-2">Julia Guez</h3>
+                <p>Julia Guez is a writer and translator based in NY and Houston; she's the translation editor for Gulf Coast.</p>
+            </div>
+
+            <div class="participant-card">
+                <h3 class="font-bold text-xl mb-2">KT Herr</h3>
+                <p>KT Herr (they/she) is a queer writer, stepparent, and curious person with work appearing or forthcoming in Foglifter, The Massachusetts Review, Black Warrior Review, and as winner of the 2023 American Literary Review Award in Poetry, among others. KT is a Four Way Books board member and an Inprint C. Glenn Cambor Fellow in critical poetics at the University of Houston.</p>
+            </div>
+
+            <div class="participant-card">
+                <h3 class="font-bold text-xl mb-2">Katharine Jager</h3>
+                <p>Katharine Jager is a poet and medieval scholar. Her research interests include poetry and poetics, late medieval labor, gender, and identity, aesthetics, lyric and lyric theory, form and formalism, the events of the Peasants' Rebellion of 1381, and performativity. She the editor of Vernacular Aesthetics: Politics, Performativity, and Reception in the Later Middle Ages, From Literature to Music. (Palgrave, 2019) and her poetry has appeared in Found Magazine, The Gettysburg Review, Commonweal, and Friends Journal, among other publications.</p>
+            </div>
+
+            <div class="participant-card">
+                <h3 class="font-bold text-xl mb-2">Leisa Loan</h3>
+                <p>Leisa Loan is from Boston, Massachusetts. She received her BA in Theatre Arts and Creative Writing from Marymount Manhattan College and her MFA in Poetry from the University of Nevada, Las Vegas. At UNLV she was co-managing editor of Interim Poetics. Her work has recently been published in Hobart and WAS Quarterly. She is currently the Digital Editor of Gulf Coast and pursuing her Phd at the University of Houston.</p>
+            </div>
+
+            <div class="participant-card">
+                <h3 class="font-bold text-xl mb-2">Kelan Nee</h3>
+                <p>Kelan Nee is a poet, writer, and carpenter from Massachusetts. His debut book Felling was released in April 2024 and was a winner of the 2023 Vassar Miller Prize.</p>
+            </div>
+
+            <div class="participant-card">
+                <h3 class="font-bold text-xl mb-2">Bevin O'Connor</h3>
+                <p>Bevin O'Connor grew up in Southern California and received her MFA in Poetry from the Iowa Writers' Workshop. She has taught writing at the University of Iowa and the University of Southern California. A 2022 finalist for the Best of the Net Anthology, her work can be found in Afternoon Visitor, Denver Quarterly, Palette Poetry, and elsewhere.</p>
+            </div>
+
+            <div class="participant-card">
+                <h3 class="font-bold text-xl mb-2">Skye Oliver</h3>
+                <p>Skye Oliver was raised in a close-knit community nestled in the forested foothills of the Appalachians, she grew up experiencing the closeness of the natural world and its entanglement with human notions of love, desire, and identity. She discovered medieval literature as a field of study as an undergraduate and followed her feminist ideas about Chaucer and his ilk to public librarianship, where she became a children's librarian known for her special knowledge of the medieval period in England. Translating medieval verse romance during her lunch breaks led her back to academia, where she uncovered a thriving and supportive community of medievalists at the University of Arkansas. Now she coaches high school rowing and works on the creative projects that have spun out of her dissertation. She holds a PhD in English from the University of Arkansas. The title of her dissertation is "Desire Lines: Reading Queerly Through the Forests of Medieval Love Literature".</p>
+            </div>
+
+            <div class="participant-card">
+                <h3 class="font-bold text-xl mb-2">Biz Rasich</h3>
+                <p>Biz Rasich was born in Texas but grew up in Richmond, Virginia. She returned to Texas for her BA in Mathematical Economic Analysis at Rice University, and comes to the MFA program after working at the University of Chicago doing press strategy and research for a book about gun violence. Her fiction explores oddities of all kinds, including conspiracies, corporate culture, reality TV, and human-animal relationships.</p>
+            </div>
+
+            <div class="participant-card">
+                <h3 class="font-bold text-xl mb-2">Camilo Roldán</h3>
+                <p>Camilo Roldán is a bilingual Colombian-American poet and translator born in Milwaukee, WI. He is the author of the poetry collections Dropout (Ornithopter Press, 2019) and El último soneto y nos vamos (HAO Rotativo de Letras, 2022). His translations include the chapbook Amilkar U., Nadaísta in Translation (These Signals Press, 2011), and María Paz Guerrero's book God is a Bitch Too (Dios también es una perra) (UDP, 2020). Individual poems and translations have appeared in various print and digital magazines in the US and abroad.</p>
+            </div>
+
+            <div class="participant-card">
+                <h3 class="font-bold text-xl mb-2">Aishwarya Sahi</h3>
+                <p>Aishwarya Sahi is a writer and editor from Patna, Bihar. She writes about the body and its small graces and indignities, imagined homes and true homes, and the bright but false promise of return. Her work has appeared in Blackbird, Poetry Project's The Recluse, and Los Angeles Review of Books, among others.</p>
+            </div>
+
+            <div class="participant-card">
+                <h3 class="font-bold text-xl mb-2">Dillon Scalzo</h3>
+                <p>Dillon Scalzo is a poet and translator with a passion for working back and forth between the mediums of Spanish and English. He spent thirteen years based in the U.S./Mexico border in San Diego, CA/Tijuana y Tecate, Baja California. He has also worked in other parts of México and Spain. In 2016, he completed a U.S. Fulbright grant to teach creative writing in Uruguay and pursue his work in translation. His work centers on the movement of poetry and art across physical and imaginary borderlands. Dillon currently teaches creative writing to K-12 students for Writers in the Schools (WITS) Houston. In the summers, he leads the WITS / Rice University creative writing camps. Dillon also teaches ESL for adults at AEC Texas, and is a translator and museum educator at Contemporary Arts Museum Houston.</p>
+            </div>
+
+            <div class="participant-card">
+                <h3 class="font-bold text-xl mb-2">Anthony Sutton</h3>
+                <p>Anthony Sutton resides on former Akokiksas, Atakapa, Karankawa, and Sana land (currently named Houston, TX), holds an MFA from the currently under threat program in Creative Writing at Purdue University, and has had poems appear or forthcoming in guesthouse, Gulf Coast, Grist, The Journal, Prairie Schooner, Puerto del Sol, Oversound, Quarter After Eight, Southern Indiana Review, Zone 3, and elsewhere.</p>
+            </div>
+
+            <div class="participant-card">
+                <h3 class="font-bold text-xl mb-2">Mathew Weitman</h3>
+                <p>Mathew Weitman's poetry appears in Bennington Review, The Georgia Review, Virginia Quarterly Review, and elsewhere. He is the winner of the Loraine Williams Poetry Prize, the AWP Kurt Brown Award, and the Inprint Verlaine Prize in Poetry. He has also received support from Millay Arts and the Bloedel Reserve. Currently, he is pursuing his PhD in creative writing and literature at the University of Houston, where he is a poetry editor for Gulf Coast.

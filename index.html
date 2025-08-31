@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space City Medievalism</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <style>
+        @font-face {
+            font-family: 'Archive Mono';
+            src: url('/fonts/archive-mono/ArchiveMono-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        body {
+            font-family: 'Archive Mono', monospace;
+            background-color: #FFF8DB;
+            color: #006354;
+            background-image: 
+                linear-gradient(rgba(255, 248, 219, 0.95), rgba(255, 248, 219, 0.95)),
+                url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23006354' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(215, 129, 39, 0.95), rgba(215, 129, 39, 0.85)),
+                        url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M0 0h20v20H0V0zm10 17l-7-7 7-7 7 7-7 7z'/%3E%3C/g%3E%3C/svg%3E");
+            color: white;
+            padding: 4rem 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .medieval-border {
+            border: 2px solid #D78127;
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .medieval-border::before,
+        .medieval-border::after {
+            content: '';
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            border: 2px solid #D78127;
+        }
+
+        .medieval-border::before {
+            top: -0.5rem;
+            left: -0.5rem;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .medieval-border::after {
+            bottom: -0.5rem;
+            right: -0.5rem;
+            border-left: none;
+            border-top: none;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: #D78127;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #D78127;
+        }
+
+        .event-card {
+            background: #006354;
+            color: white;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 0.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .event-card::before {
+            content: '❧';
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            font-size: 1.5rem;
+            opacity: 0.2;
+        }
+
+        .space-pattern {
+            background: linear-gradient(45deg, #1a202c 25%, transparent 25%),
+                        linear-gradient(-45deg, #1a202c 25%, transparent 25%),
+                        linear-gradient(45deg, transparent 75%, #1a202c 75%),
+                        linear-gradient(-45deg, transparent 75%, #1a202c 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-gray-800">✧ Space City Medievalism ✧</div>
+                <div>
+                    <a href="#" class="mr-6 hover:text-orange-800 transition-colors">Home</a>
+                    <a href="participants.html" class="hover:text-orange-800 transition-colors">Meet the Participants</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="text-4xl mb-6">Space City Medievalism</h1>
+            <p class="text-xl mb-4">A series of events staging encounters between contemporary poets and medieval literature in Houston, TX.</p>
+            <div class="text-lg opacity-80">2024-25 Program Series</div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-8 max-w-4xl">
+        <section class="mb-8">
+            <img src="images/reading.jpg" alt="Space City Medievalism Reading" class="w-full rounded-lg shadow-lg mb-4">
+        </section>
+        
+        <section class="medieval-border">
+            <h2 class="section-title">Project Overview</h2>
+            <p class="mb-6">During the 2024-25 year, we are hosting a series of workshops between scholars of medieval literature and creative writers that explore different aspects of medieval poetics. Creative writers will then create their own responses to medieval literature, ranging from translations and adaptations to pastiches and confrontations, to create original compositions that intertwine contemporary and medieval poetics.</p>
+        </section>
+
+        <section class="my-12">
+            <h2 class="section-title">Events</h2>
+            <div class="event-card">
+                <a href="https://www.uh.edu/calendar/index/713-743-9506?view=e&id=650085#event" class="block hover:opacity-90 transition-opacity">
+                    <h3 class="font-bold text-xl mb-2">Lecture from Carl Phillips</h3>
+                    <p class="mb-1">Tuesday, April 8, 2025</p>
+                    <p class="text-sm opacity-80">Elizabeth D. Rockwell Pavilion, University of Houston, 5:30pm</p>
+                </a>
+            </div>
+            <div class="event-card">
+                <a href="https://www.uh.edu/calendar/index/713-743-9506?view=e&id=650086#event" class="block hover:opacity-90 transition-opacity">
+                    <h3 class="font-bold text-xl mb-2">Space City Medievalism Final Reading</h3>
+                    <p class="mb-1">Wednesday, April 9, 2025</p>
+                    <p class="text-sm opacity-80">Menil Collection, 7pm</p>
+                </a>
+            </div>
+            <div class="event-card">
+                <a href="https://www.uh.edu/calendar/index/713-743-9506?view=e&id=650147#event" class="block hover:opacity-90 transition-opacity">
+                    <h3 class="font-bold text-xl mb-2">Carl Phillips Poetry Reading</h3>
+                    <p class="mb-1">Thursday, April 10, 2025</p>
+                    <p class="text-sm opacity-80">Lawndale Art Center, 7pm</p>
+                </a>
+            </div>
+            <p class="mt-4 text-sm text-gray-600">Click event for registration details.</p>
+        </section>
+
+        <section class="mb-8">
+            <img src="images/workshop.jpg" alt="Space City Medievalism Workshop" class="w-full rounded-lg shadow-lg mb-4">
+        </section>
+
+        <section class="medieval-border">
+            <h2 class="section-title">Houston & Medieval Studies</h2>
+            <p class="mb-6">Houston and medieval are words that do not sit easily together. Houston's relationship to the past is often one of ambivalence, if not outright aggression: its urbanism is based on knocking down the old to build the new, and the legacies of environmental disasters have further frayed the ties between the city and its past. Space City Medievalism uses this tension between place and time to galvanize creative responses to medieval literature in Houston.</p>
+        </section>
+
+        <section class="medieval-border">
+            <h2 class="section-title">Reimagining Medieval Studies</h2>
+            <p class="mb-6">Just as Houston's identity is continually in formation and defined by multilingualism, so too is the Middle Ages changing as a concept. As a term, "The Middle Ages" is a post-medieval invention. Academic study of the period formalized during the nineteenth century, driven by imperialist and nationalizing narratives. These vestiges remain within the academic discipline of Medieval Studies, but recent work has sought to confront the field's imperialism and racism. Space City Medievalism contributes to these efforts reimagining the futures of Medieval Studies by fusing contemporary and medieval poetics.</p>
+        </section>
+
+        <section class="medieval-border">
+            <h2 class="section-title">Contact Information</h2>
+            <p class="mb-4">For further information about Space City Medievalism, please contact Daniel Davies at:</p>
+            <p class="font-bold" id="contact-email">ddavies [at] uh [dot] edu</p>
+        </section>
+
+        <section class="mt-12 bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="section-title">Supporting Organizations</h2>
+            <p class="mb-6">The participants of Space City Medievalism are grateful for support from:</p>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="space-y-2">
+                    <div class="flex items-center">
+                        <span class="text-orange-700 mr-2">✧</span>
+                        Medieval Academy of America's Centennial Grants Program
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-orange-700 mr-2">✧</span>
+                        Houston Arts Alliance's Let Creative Happen Grants
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex items-center">
+                        <span class="text-orange-700 mr-2">✧</span>
+                        University of Houston Center for Public History
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-orange-700 mr-2">✧</span>
+                        Department of English
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-orange-700 mr-2">✧</span>
+                        African American Studies
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-orange-700 mr-2">✧</span>
+                        Women's Gender and Sexuality Studies
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="mt-16 bg-white p-8 border-t-2 border-gray-200">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-3 gap-8 items-center mb-8">
+                    <div class="flex justify-center">
+                        <img src="/images/medieval-academy.png" alt="Medieval Academy of America Logo" class="h-24 object-contain"/>
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="/images/haa-logo.png" alt="Houston Arts Alliance Logo" class="h-16 object-contain"/>
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="/images/uh-logo.png" alt="University of Houston Logo" class="h-16 object-contain"/>
+                    </div>
+                </div>
+                <div class="text-center text-sm text-gray-600 max-w-3xl mx-auto">
+                    <p>This text is typeset in Archive Mono, a typeface developed by Colophon Foundry that honors NASA's early coding & design language while also taking inspiration from Garamond, a typeface developed by sixteenth-century Parisian engraver Claude Garamond.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
